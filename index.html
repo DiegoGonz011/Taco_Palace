@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Palace</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Encabezado / Header -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">🌮</span>
+            <span class="logo-taco">Taco</span><span class="logo-palace">Palace</span>
+        </div>
+
+        <div class="user-controls">
+            <input type="email" id="email-input" placeholder="email">
+            <button id="login-btn">Login</button>
+            <div class="cart-container">
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Categorías -->
+    <nav class="categories-bar">
+        <div class="category-item">
+            <div class="category-img-box">
+                <img src="static/images/enchiladas.jpg" alt="Enchiladas">
+            </div>
+            <span>Enchiladas</span>
+        </div>
+        <div class="category-item">
+            <div class="category-img-box">
+                <img src="static/images/tacos.jpg" alt="Tacos">
+            </div>
+            <span>Tacos</span>
+        </div>
+        <div class="category-item">
+            <div class="category-img-box">
+                <img src="static/images/flautas.jpg" alt="Flautas">
+            </div>
+            <span>Flautas</span>
+        </div>
+        <div class="category-item">
+            <div class="category-img-box">
+                <img src="static/images/gorditas.jpg" alt="Gorditas">
+            </div>
+            <span>Gorditas</span>
+        </div>
+        <div class="category-item">
+            <div class="category-img-box">
+                <img src="static/images/tostadas.jpg" alt="Tostadas">
+            </div>
+            <span>Tostadas</span>
+        </div>
+        <div class="category-item">
+            <div class="category-img-box">
+                <img src="static/images/enfrijoladas.jpg" alt="Enfrijoladas">
+            </div>
+            <span>Enfrijoladas</span>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        
+        <!-- Banner Promocional Principal (Izquierda) -->
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h1>La mejor variedad en platillos de comida mexicana</h1>
+                <p>Contamos con <u class="text-underline">servicio</u> a <span class="text-orange">domicilio</span></p>
+            </div>
+            <div class="hero-img-container">
+                <!-- Se agregó 'static/' a la ruta del data-hover -->
+                <img id="hero-image" 
+                     src="static/images/comida-mexicana.jpg" 
+                     data-hover="static/images/comida-mexicana2.jpg"
+                     alt="Platillo Principal">
+            </div>
+        </section>
+
+        <!-- Sección Recomendados (Derecha) -->
+        <section class="recommended-section">
+            <h2>Recomendados:</h2>
+
+            <!-- Tarjeta 1 -->
+            <div class="recommended-card">
+                <div class="card-img-box">
+                    <img src="static/images/orden-tacos.jpg" alt="Orden de Tacos">
+                </div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <h3>Orden de Tacos</h3>
+                        <a href="#" class="more-link">Ver Más...</a>
+                    </div>
+                    <button class="add-btn" aria-label="Agregar al carrito">+</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="recommended-card">
+                <div class="card-img-box">
+                    <img src="static/images/orden-flautas.jpg" alt="Orden de Flautas">
+                </div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <h3>Orden de Flautas</h3>
+                        <a href="#" class="more-link">Ver Más...</a>
+                    </div>
+                    <button class="add-btn" aria-label="Agregar al carrito">+</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

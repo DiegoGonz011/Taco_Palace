@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Alerta de Login
     const loginBtn = document.getElementById('login-btn');
     const emailInput = document.getElementById('email-input');
 
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. Contador del carrito
     const cartCountElement = document.getElementById('cart-count');
     const addButtons = document.querySelectorAll('.add-btn');
     let cartCount = 0;
@@ -25,11 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Cambio de imagen al pasar el mouse (Hover)
     const heroImage = document.getElementById('hero-image');
     
     if (heroImage) {
-        // Se obtiene la ruta original directamente de la propiedad 'src'
         const originalSrc = heroImage.src;
         const hoverSrc = heroImage.getAttribute('data-hover');
 
